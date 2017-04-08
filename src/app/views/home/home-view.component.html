@@ -1,0 +1,16 @@
+
+<md-card>
+  <md-card-title>Add Chore</md-card-title>
+  <md-input-container>
+    <input #choreInput mdInput placeholder="Chore Description">
+  </md-input-container>
+  <button md-raised-button (click)="addChore(choreInput.value)">Add</button>
+</md-card>
+
+
+<md-card>
+  <md-card-title>Chores</md-card-title>
+  <md-list>
+    <md-list-item *ngFor="let chore of choreService.chores | async"> {{chore.description}} </md-list-item>
+  </md-list>
+</md-card>
