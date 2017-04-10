@@ -2,9 +2,9 @@ import { Chore } from '../../models/chore.model';
 
 export let choresMock: Chore[] = [
   {
-    description: 'wash dishes'
+    title: 'wash dishes'
   },
   {
-    description: 'vacuum floors'
+    title: 'vacuum floors'
   }
 ];

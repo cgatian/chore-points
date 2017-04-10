@@ -1,3 +1,4 @@
 export interface Chore {
-  description: string;
+  title: string;
+  point?: number;
 }

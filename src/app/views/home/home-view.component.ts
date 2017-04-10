@@ -11,7 +11,8 @@ export class HomeView {
 
   addChore(choreDescription: string) {
     this.choreService.addChore({
-      description: choreDescription
+      title: choreDescription,
+      point: 0
     });
   }
 }
