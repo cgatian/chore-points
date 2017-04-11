@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { Chore } from 'app/models/chore.model';
-
-import { choresMock } from './mocks/chore.service.mock';
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
+import { ChoreType } from 'app/models/chore-type.model';
+import { choreTypes } from './mocks/chore.service.mock';
+
 @Injectable()
 export class ChoreService {
-  private _chores: BehaviorSubject<Chore[]>;
+  private _choreTypes: BehaviorSubject<ChoreType[]>;
 
-  public get chores(): Observable<Chore[]> {
-    return this._chores.asObservable();
+  public get choreTypes(): Observable<ChoreType[]> {
+    return this._choreTypes.asObservable();
   }
 
   constructor() {
-    this._chores = new BehaviorSubject(choresMock);
+    this._choreTypes = new BehaviorSubject(choreTypes);
   }
 
-  addChore(chore: Chore): void {
-    this._chores.next([... this._chores.getValue(), chore]);
+  createChoreType(chore: ChoreType): void {
+    this._choreTypes.next([... this._choreTypes.getValue(), chore]);
   }
 }

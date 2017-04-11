@@ -1,10 +1,12 @@
-import { Chore } from '../../models/chore.model';
+import { ChoreType } from '../../models/chore-type.model';
 
-export let choresMock: Chore[] = [
+export let choreTypes: ChoreType[] = [
   {
+    id: 1,
     title: 'wash dishes'
   },
   {
+    id: 2,
     title: 'vacuum floors'
   }
 ];

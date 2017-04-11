@@ -1,0 +1,10 @@
+<h2>Admin</h2>
+<div fxLayout="column">
+  <a fxFlex fxFlexAlign="end" md-fab routerLink="/chore"><md-icon>add</md-icon></a>
+</div>
+<md-nav-list>
+  <h3 md-subheader>Chores</h3>
+  <a md-list-item [routerLink]="['/chore/', chore.id]" *ngFor="let chore of choreService.choreTypes | async">
+      {{chore.title}}
+  </a>
+</md-nav-list>

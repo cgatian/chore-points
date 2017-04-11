@@ -10,9 +10,9 @@ export class HomeView {
   constructor(public choreService: ChoreService) { }
 
   addChore(choreDescription: string) {
-    this.choreService.addChore({
-      title: choreDescription,
-      point: 0
-    });
+    // this.choreService.createChoreType({
+    //   title: choreDescription,
+    //   pointValue: 0
+    // });
   }
 }

@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
-import { MaterialModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
+    RouterModule
     ],
   exports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: []

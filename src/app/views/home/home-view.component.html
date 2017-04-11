@@ -11,6 +11,6 @@
 <md-card>
   <md-card-title>Completed chores</md-card-title>
   <md-list>
-    <md-list-item *ngFor="let chore of choreService.chores | async"> {{chore.description}} </md-list-item>
+    <md-list-item *ngFor="let chore of choreService.choreTypes | async"> {{chore.description}} </md-list-item>
   </md-list>
 </md-card>
