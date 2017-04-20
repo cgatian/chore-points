@@ -1,5 +1,5 @@
 export interface ChoreType {
-  id: number;
+  id?: number;
   title: string;
   pointValue?: number;
 }

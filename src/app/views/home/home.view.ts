@@ -3,7 +3,7 @@ import { ChoreService } from '../../services/chore.service';
 
 @Component({
   selector: 'cp-home-view',
-  templateUrl: './home-view.component.html'
+  templateUrl: './home.view.html'
 })
 export class HomeView {
 

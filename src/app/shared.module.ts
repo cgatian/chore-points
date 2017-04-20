@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -10,13 +11,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
     ],
   exports: [
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: []

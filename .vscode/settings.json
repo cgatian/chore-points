@@ -1,3 +1,6 @@
 {
-    "vsicons.presets.angular": true
+    "vsicons.presets.angular": true,
+    "vsicons.associations.files": [
+      { "icon": "ng_smart_component_ts2", "extensions": ["view.ts"], "format": "svg" }
+    ]
 }
